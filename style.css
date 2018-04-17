@@ -1,0 +1,22 @@
+p {
+    text-indent: 40px;
+    color: black;
+    font-family: Helvetica;
+}
+
+a {
+    color: darkslategrey;
+}
+
+h2, h3 {
+    color: darkcyan;
+    font-family: Georgia;
+    text-indent: 20px;
+}
+
+h1 {
+    text-indent: 10px;
+    background-color: darkcyan;
+    color: azure;
+    font-family: Georgia;
+}
