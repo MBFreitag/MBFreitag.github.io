@@ -1,27 +1,21 @@
-/**
- * Display the average amount of energy (amplitude) across a range
- * of frequencies using the p5.FFT class and its methods analyze()
- * and getEnergy().
- *
- * This example divides the frequency spectrum into eight bands.
- */
-
-var soundFile;
+var input;
 var fft;
 
 var description = 'loading';
 var p;
 
-function preload() {
-  soundFormats('mp3', 'ogg');
-  soundFile = loadSound('../files/beat');
-}
+
 
 function setup() {
   createCanvas(1024, 400);
   fill(255, 40, 255);
   noStroke();
   textAlign(CENTER);
+
+  input = new p5.AudioIn();
+
+  // start the Audio Input
+  input.start();
 
   fft = new p5.FFT();
 
