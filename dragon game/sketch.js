@@ -17,10 +17,6 @@ function preload() {
     cloud2 = loadImage("cloud2.png");
     cloud3 = loadImage("cloud3.png");
     cloud4 = loadImage("cloud4.png");
-    dragonhead = loadImage("");
-    dragonarm = loadImage("");
-    dragonbody = loadImage("");
-    dragontail = loadImage("");
 }
 
 var px = 2;
