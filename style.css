@@ -33,13 +33,13 @@ p {
 .share a {
     color: white;
     background: maroon;
-    border: 1px solid maroon;
-    border-radius: 3px;
+    border: 3px solid maroon;
+    border-radius: 5px;
     display: inline-block;
     padding:7px;
     text-decoration: none;
-    margin: 10px;
-    padding: 6px;
+    margin: 5px;
+    padding: 4px;
     font-family: Helvetica;
     font-size: 15px;
 
@@ -47,12 +47,12 @@ p {
 .share a:hover {
   color: maroon;
   background: white;
-  border: 1px dotted maroon;
-  border-radius: 3px;
+  border: 3px dotted maroon;
+  border-radius: 5px;
   display: inline-block;
   text-decoration: none;
-  margin: 10px;
-  padding: 6px;
+  margin: 5px;
+  padding: 4px;
   font-family: Helvetica;
   font-size: 15px;
 }
