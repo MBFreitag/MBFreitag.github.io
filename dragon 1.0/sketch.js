@@ -1,4 +1,4 @@
-var px = 1;
+var px = 1.5;
 
 var dragon;
 
