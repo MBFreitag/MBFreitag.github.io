@@ -26,19 +26,19 @@ function Dragon(tempLength) {
             this.y[i] = this.y[i - 1];
             switch (i) {
             case 1:
-                fill(255, 0, 0);
+                fill(255, 175, 66);
                 break;
             case int(this.length / 4):
-                fill(0, 0, 255);
+                fill(22);
                 break;
             case int(this.length * 3 / 4):
-                fill(0, 0, 255);
+                fill(22);
                 break;
             case this.length:
-                fill(0, 255, 0);
+                fill(117, 167, 174);
                 break;
             default:
-                fill(255);
+                fill(65);
             }
             rect(this.x[i], this.y[i], this.size, this.size);
         }
@@ -46,7 +46,7 @@ function Dragon(tempLength) {
     this.displayLives = function() {
         for (var i = 0; i < this.lives; i++) {
             var r = 2 * PI / this.lives * i;
-            fill(175);
+            fill(255,0,0);
             rect(this.x[1] + (this.size) * sin(this.theta + r), this.y[1] + (this.size) * cos(this.theta + r), this.liveSize, this.liveSize);
         }
         this.theta -= .05;

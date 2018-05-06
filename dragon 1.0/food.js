@@ -8,7 +8,7 @@ function Food() {
     this.maxspeed = 3;
 
     this.display = function() {
-        fill(0, 255, 255);
+        fill(255, 100, 100);
         rect(this.x, this.y, this.size, this.size);
     };
     this.scroll = function() {

@@ -1,5 +1,5 @@
 function Obstacle() {
-    this.size = 48 * px;
+    this.size = 32 * px;
     this.x = this.size / 2 + width;
     this.y = random(this.size / 2, height - this.size / 2);
     this.xvel = 4;
@@ -8,7 +8,7 @@ function Obstacle() {
     this.maxspeed = .6;
 
     this.display = function() {
-        fill(255, 0, 255);
+        fill(63, 54, 45);
         rect(this.x, this.y, this.size, this.size);
     };
     this.scroll = function() {
@@ -18,9 +18,8 @@ function Obstacle() {
         this.y += this.yvel;
     }
     this.edgeCheck = function() {
-        if (this.x + this.size / 2 < 0) {
+        if (this.x + this.size / 2 < -100) {
             return true;
-            print(y);
         } else {
             return false;
         }
