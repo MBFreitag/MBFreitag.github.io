@@ -8,7 +8,7 @@ function Obstacle() {
     this.maxspeed = .6;
 
     this.display = function() {
-        fill(63, 54, 45);
+        stroke(63, 54, 45);
         rect(this.x, this.y, this.size, this.size);
     };
     this.scroll = function() {

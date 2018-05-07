@@ -14,7 +14,7 @@ function Fireball(tempy) {
         }
     };
     this.display = function() {
-        fill(245, 127, 32);
+        stroke(245, 127, 32);
         rect(this.x, this.y, this.size, this.size);
     };
     this.move = function() {

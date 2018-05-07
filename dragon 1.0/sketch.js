@@ -17,7 +17,8 @@ var cloudtimer;
 function setup() {
     createCanvas(1366, 768);
     rectMode(CENTER);
-    noStroke();
+    noFill();
+    strokeWeight(3);
 
     dragon = new Dragon(11);
     fbstimer = new Timer(1000);
