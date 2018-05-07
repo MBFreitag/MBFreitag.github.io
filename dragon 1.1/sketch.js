@@ -5,6 +5,7 @@ function preload() {
   cimg2 = loadImage("cloud2.png");
   cimg3 = loadImage("cloud3.png");
   cimg4 = loadImage("cloud4.png");
+  fbimg= loadImage("fireball.png");
 }
 
 var px = 2;

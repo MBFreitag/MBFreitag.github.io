@@ -16,6 +16,7 @@ function Fireball(tempy) {
     this.display = function() {
         stroke(245, 127, 32);
         rect(this.x, this.y, this.size, this.size);
+        img(fbimg,this.x-this.w/2, this.y+this.h/2, this.w, this.h)
     };
     this.move = function() {
         this.vel += this.accel;
