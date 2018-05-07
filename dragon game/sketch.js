@@ -10,5 +10,5 @@ function setup() {
 }
 function draw() {
     background(0);
-    image(cloud2,0,0);
+    image(cloud2,0,0,48*2,64*2);
 }
