@@ -1,11 +1,18 @@
-var cimg1,cimg2,cimg3,cimg4,drimg1,drimg2,drimg3,drimg4,drimg5,fbimg,foodimg,obsimg,bgimg;
+var cimg1,cimg2,cimg3,cimg4,drimg1,drimg2,drimg3,drimg4,drimg5,drimg6,fbimg,foodimg,obsimg,bgimg;
 
 function preload() {
   cimg1 = loadImage("cloud1.png");
   cimg2 = loadImage("cloud2.png");
   cimg3 = loadImage("cloud3.png");
   cimg4 = loadImage("cloud4.png");
-  fbimg= loadImage("fireball.png");
+  drimg1 = loadImage("dragonhead.png");
+  drimg2 = loadImage("dragonarm.png");
+  drimg3 = loadImage("dragonbody.png");
+  drimg4 = loadImage("dragontaila.png");
+  drimg5 = loadImage("dragontailb.png");
+  drimg6 = loadImage("dragonlives.png");
+  fbimg = loadImage("fireball.png");
+  foodimg = loadImage("food.png");
 }
 
 var px = 2;
@@ -30,7 +37,7 @@ function setup() {
     noFill();
     strokeWeight(3);
 
-    dragon = new Dragon(11);
+    dragon = new Dragon(12);
     fbstimer = new Timer(1000);
 
     obstimer = new Timer(300);

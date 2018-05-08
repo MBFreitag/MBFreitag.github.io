@@ -29,7 +29,7 @@ function Cloud() {
     this.display = function() {
         stroke(240,240,255);
         rect(this.x, this.y, this.w, this.h);
-        image(this.img, this.x-this.w/2, this.y+this.h/2, this.w, this.h);
+        image(this.img, this.x-this.w/2, this.y-this.h/2, this.w, this.h);
     };
     this.scroll = function() {
         this.x -= this.xvel;
