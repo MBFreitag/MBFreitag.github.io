@@ -28,7 +28,7 @@ function preload() {
     bgimg = loadImage("sprites/background.png");
 }
 
-var px = 2;
+var px = 3;
 
 var dragon;
 
@@ -48,7 +48,7 @@ function setup() {
     createCanvas(1366, 768);
     rectMode(CENTER);
     noFill();
-    strokeWeight(3);
+    strokeWeight(0);
 
     dragon = new Dragon(12);
     fbstimer = new Timer(1000);
@@ -65,7 +65,7 @@ function setup() {
 
 function draw() {
     background(212, 187, 148);
-    image(bgimg,0,0,width*2,height*2);
+    image(bgimg,0,0,width * px,height * px);
     if (cloudtimer.isFinished()) {
         clouds.push(new Cloud());
         cloudtimer.begin();

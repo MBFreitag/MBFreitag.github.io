@@ -35,11 +35,11 @@ function Dragon(tempLength) {
                 break;
             case int(this.length / 4):
                 stroke(22);
-                img = drimg3;
+                img = drimg2;
                 break;
             case int(this.length * 3 / 4):
                 stroke(22);
-                img = drimg3;
+                img = drimg2;
                 break;
             case this.length - 1:
                 stroke(117, 167, 174);
@@ -51,7 +51,7 @@ function Dragon(tempLength) {
                 break;
             default:
                 stroke(65);
-                img = drimg2;
+                img = drimg3;
             }
             if (i == 1) {
                 imgw = this.size * 3;
@@ -72,7 +72,7 @@ function Dragon(tempLength) {
             var r = 2 * PI / this.lives * i;
             stroke(255, 0, 0);
             rect(this.x[1] + (this.size) * sin(this.theta + r), this.y[1] + (this.size) * cos(this.theta + r), this.liveSize, this.liveSize);
-            image(img,this.x[1] + (this.size) * sin(this.theta + r) - this.liveSize / 2, this.y[1] + (this.size) * cos(this.theta + r) - this.liveSize / 2, this.liveSize, this.liveSize);
+            image(img,this.x[1] + (this.size * 2) * sin(this.theta + r) - this.liveSize / 2, this.y[1] + (this.size) * cos(this.theta + r) - this.liveSize / 2, this.liveSize, this.liveSize);
         }
         this.theta -= .05;
     };
