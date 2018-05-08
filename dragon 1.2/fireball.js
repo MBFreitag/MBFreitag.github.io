@@ -14,9 +14,11 @@ function Fireball(tempy) {
         }
     };
     this.display = function() {
+        var imgw = this.size * 2;
+        var imgh =
         stroke(245, 127, 32);
         rect(this.x, this.y, this.size, this.size);
-        image(fbimg,this.x-this.size/2, this.y-this.size/2, this.size*2, this.size);
+        image(fbimg, this.x - imgw / 2, this.y - imgh / 2, imgw, imgh);
     };
     this.move = function() {
         this.vel += this.accel;
