@@ -28,7 +28,7 @@ function preload() {
     bgimg = loadImage("sprites/background.png");
 }
 
-var px = 3;
+var px = 2;
 
 var dragon;
 
@@ -48,7 +48,7 @@ function setup() {
     createCanvas(1366, 768);
     rectMode(CENTER);
     noFill();
-    strokeWeight(0);
+    strokeWeight(1);
 
     dragon = new Dragon(12);
     fbstimer = new Timer(1000);
@@ -117,7 +117,7 @@ function draw() {
 
     if ((keyIsPressed) && (fbstimer.isFinished()) && (dragon.length > 8)) {
         dragon.spit();
-        fbs.push(new Fireball(mouseY));
+        fbs.push(new Fireball(mouseY + 4 * px));
         fbstimer.begin();
     }
 }

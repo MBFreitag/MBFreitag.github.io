@@ -10,7 +10,7 @@ function Food() {
     this.display = function() {
         stroke(255, 100, 100);
         rect(this.x, this.y, this.size, this.size);
-        image(foodimg,this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
+        image(foodimg, this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
     };
     this.scroll = function() {
         this.x -= this.xvel;
