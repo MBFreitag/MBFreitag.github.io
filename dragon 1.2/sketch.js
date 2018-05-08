@@ -50,7 +50,7 @@ function setup() {
     noFill();
     strokeWeight(1);
 
-    dragon = new Dragon(12);
+    dragon = new Dragon(16);
     fbstimer = new Timer(1000);
 
     obstimer = new Timer(300);
@@ -115,7 +115,7 @@ function draw() {
     dragon.display();
     dragon.displayLives();
 
-    if ((keyIsPressed) && (fbstimer.isFinished()) && (dragon.length > 8)) {
+    if ((keyIsPressed) && (fbstimer.isFinished()) && (dragon.length > 12)) {
         dragon.spit();
         fbs.push(new Fireball(mouseY + 4 * px));
         fbstimer.begin();

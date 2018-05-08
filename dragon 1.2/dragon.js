@@ -71,8 +71,8 @@ function Dragon(tempLength) {
         for (var i = 0; i < this.lives; i++) {
             var r = 2 * PI / this.lives * i;
             stroke(255, 0, 0);
-            rect(this.x[1] + (this.size) * sin(this.theta + r), this.y[1] + (this.size) * cos(this.theta + r), this.liveSize, this.liveSize);
-            image(img, this.x[1] + 8 * px + (this.size * 2) * sin(this.theta + r) - this.liveSize / 2, this.y[1] + (this.size) * cos(this.theta + r) - this.liveSize / 2, this.liveSize, this.liveSize);
+            rect(this.x[1] + 8 * px + (this.size * 1.5) * sin(this.theta + r), this.y[1] + (this.size) * cos(this.theta + r), this.liveSize, this.liveSize);
+            image(img, this.x[1] + 8 * px + (this.size * 1.5) * sin(this.theta + r) - this.liveSize / 2, this.y[1] + (this.size) * cos(this.theta + r) - this.liveSize / 2, this.liveSize, this.liveSize);
         }
         this.theta -= .05;
     };
