@@ -10,8 +10,13 @@ var cimg1,
     drimg6,
     fbimg,
     foodimg,
-    obsimg,
+    obsimg1,
+    obsimg2,
+    obsimg3,
+    obsimg4,
+    obsimg5,
     bgimg;
+
 function preload() {
     cimg1 = loadImage("sprites/cloud1.png");
     cimg2 = loadImage("sprites/cloud2.png");
@@ -23,6 +28,11 @@ function preload() {
     drimg4 = loadImage("sprites/dragontaila.png");
     drimg5 = loadImage("sprites/dragontailb.png");
     drimg6 = loadImage("sprites/dragonlives.png");
+    obsimg1 = loadImage("sprites/Phoenix1.png");
+    obsimg2 = loadImage("sprites/Phoenix2.png");
+    obsimg3 = loadImage("sprites/Phoenix3.png");
+    obsimg4 = loadImage("sprites/Phoenix4.png");
+    obsimg5 = loadImage("sprites/Phoenix5.png");
     fbimg = loadImage("sprites/fireball.png");
     foodimg = loadImage("sprites/food.png");
     bgimg = loadImage("sprites/background.png");
@@ -65,7 +75,7 @@ function setup() {
 
 function draw() {
     background(212, 187, 148);
-    image(bgimg,0,0,width * px,height * px);
+    image(bgimg, 0, 0, width * px, height * px);
     if (cloudtimer.isFinished()) {
         clouds.push(new Cloud());
         cloudtimer.begin();
@@ -83,6 +93,7 @@ function draw() {
         obstimer.begin();
     }
     for (var o in obs) {
+        obs[o].spriteSetup();
         obs[o].display();
         obs[o].scroll();
         if ((dragon.obsCheck(obs[o])) || (obs[o].edgeCheck())) {
