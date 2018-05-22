@@ -55,7 +55,7 @@ var clouds = [];
 var cloudtimer;
 
 function setup() {
-    createCanvas(1366, 768);
+    createCanvas(1440, 840);
     rectMode(CENTER);
     noFill();
     strokeWeight(1);

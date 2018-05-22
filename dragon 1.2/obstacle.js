@@ -6,13 +6,13 @@ function Obstacle() {
     this.off = random(0, 1000);
     this.yvel = 0;
     this.maxspeed = .6;
-    this.spriteTimer = new Timer(50);
+    this.spriteTimer = new Timer(random(48,52));
     this.spritenum = 2;
     this.n = 1;
 
     this.spriteSetup = function() {
         if (this.spriteTimer.isFinished()) {
-            if ((this.spritenum > 4) || (this.spritenum < 1)) {
+            if ((this.spritenum > 4) || (this.spritenum < 2)) {
                 this.n = this.n * -1;
             }
             this.spritenum += this.n;

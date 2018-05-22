@@ -14,7 +14,7 @@ function Fireball(tempy) {
         }
     };
     this.display = function() {
-        var imgw = this.size * 2;
+        var imgw = this.size * 4;
         var imgh = this.size;
         stroke(245, 127, 32);
         rect(this.x, this.y, this.size, this.size);
