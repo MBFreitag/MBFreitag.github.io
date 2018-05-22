@@ -58,7 +58,7 @@ function setup() {
     createCanvas(1440, 840);
     rectMode(CENTER);
     noFill();
-    strokeWeight(1);
+    strokeWeight(0);
 
     dragon = new Dragon(16);
     fbstimer = new Timer(1000);
